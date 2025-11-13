@@ -42,7 +42,7 @@ cp .env.example .env
 ### 4. Запуск
 
 ```bash
-python main.py
+python main.py "Key risks in climate reports?"
 ```
 
 ## Пример вывода
