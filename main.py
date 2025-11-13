@@ -1,4 +1,4 @@
-import os
+import os, sys
 from dotenv import load_dotenv
 import requests
 import numpy as np
@@ -110,7 +110,7 @@ def calculate_similarity(original, variants):
 
 
 def main():
-    query = "Key risks in climate reports?"
+    query = ' '.join(sys.argv[1:])
     
     print("\n" + "="*70)
     print("AI QUERY OPTIMIZER")
